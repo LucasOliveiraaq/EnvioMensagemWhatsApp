@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Mensagem no WhatsApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-900">
+    <div class="bg-gray-800 p-6 rounded-2xl shadow-lg w-full max-w-sm text-white">
+        <h2 class="text-xl font-bold mb-4 text-center">Enviar Mensagem</h2>
+        <label class="block mb-2 text-sm">Número de WhatsApp</label>
+        <input id="numero" type="tel" placeholder="Ex: 5511999999999" 
+               class="w-full p-2 rounded-lg text-black focus:ring-2 focus:ring-green-500">
+        <label class="block mt-4 mb-2 text-sm">Mensagem</label>
+        <textarea id="mensagem" rows="3" placeholder="Digite sua mensagem..."
+                  class="w-full p-2 rounded-lg text-black focus:ring-2 focus:ring-green-500"></textarea>
+        <button onclick="enviarMensagem()" class="mt-4 w-full bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg">
+            Enviar no WhatsApp
+        </button>
+    </div>
+</body>
+</html>
